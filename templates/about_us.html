@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Beauty Spot: About Us</title> 
+        <link rel="icon" type="image/x-icon" href="/images/myicon.ico">
+        <meta name="viewport" content="widthdevice-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Sono' rel='stylesheet' type='text/css'>
+        <link href="{{ url_for('static', filename='css/about_us.css') }}" rel="stylesheet"> 
+    </head>
+    <body> 
+        <!-- MainContainer Starts Here -->
+        <a id="maincontainer">
+            <!-- Header Starts Here-->
+            <header>
+                <a class="logo" href="/">
+                    <img src="{{ url_for('static', filename='images/final-logo.png') }}" alt="logo" title="Logo">
+                </a>
+                <nav>
+                    <ul class="nav-list">
+                        <li><a href="/index">Home</a></li>
+                        <li><a href="/product">Products</a></li>
+                        <li class="selected">About Us</li>
+                        <li><a href="/contact_us">Contact Us</a></li>
+                        <li><a href="/chart">Analytics</a></li>
+                        
+                    </ul>
+                    <div class="topnav-right">
+                        <a href="/logout">Logout</a>
+                    </div>
+                </nav>
+            </header>
+                <!-- Hearder Ends Here -->
+                <!-- Content Starts Here -->
+                <div id="content">
+                    <!-- HeroBanner Starts Here -->
+                    <div class="herobanner">
+                        <img src="{{ url_for('static', filename='images/aboutUs_top.jpg') }}" alt="Hero Banner" title="Hero Banner">
+                    </div>
+                    <section class="top-content">
+                        <h2>For Women, By Women</h2> 
+                    </section>
+                    <section class="top-content">
+                        <h3>We are a team of 4 women in STEM (Science, Technology, Engineering & Mathematics) determined
+                        to encourage other women help discover their unique identity and personal style through a
+                        wide range of genuine and affordable beauty products. </h3>
+                    </section>
+                </div>
+            <section class="mid-content">
+                <h2>Our Team Members</h2>
+                <div class="members">
+                    <div class="member-wrapper">
+                        <img src="{{ url_for('static', filename='images/linkedin/Aarsha_Linkedin_Photo.png') }}" alt="aboutUs_Aarsha" title="aboutUs_Aarsha" class="image">
+                        <div class="member-info">
+                            <p class="name">Aarsha Joji</p>
+                            <p class="info-title">MS in Business Analytics at USF</p>
+                            <p class="description">Worked as a Data Engineer for about two years at Cognizant Technology Solutions, 
+                                India for a real estate based client.
+                                
+                            </p>
+                            <p class="contribution">Created "Home" Page & "Hair Care Products" Page (html+css). 
+                                Added dropdown, search & add to cart functionality for product page using javascript. 
+                                Incorporated bootstrap enhanced the existing pages. </p>
+                        </div> 
+                    </div>
+                    <div class="member-wrapper">
+                        <img src="{{ url_for('static', filename='images/linkedin/Mounica_LinkedIn.jpg') }}" alt="aboutUs_Mounica" title="aboutUs_Mounica" class="image">
+                        <div class="member-info">
+                            <p class="name">Mounica Kolukula</p>
+                            <p class="info-title">MS in Business Analytics at USF</p>
+                            <p class="description">Two years of professional experience with Cognizant Technology Solutions, India 
+                                as a Data Engineer for one of the leading energy service providers in UK.
+                                
+                            </p>
+                            <p class="contribution">Created "Body Lotions & Moisturising Creams" (html+css) & Products Page (html). 
+                                Integrated the code and added new files to the existing pages. And made some corrections to the existing codes. 
+                            </p>
+                        </div> 
+                    </div>
+                    <div class="member-wrapper">
+                        <img src="{{ url_for('static', filename='images/linkedin/Ritika_LinkedIn.jpg') }}" alt="aboutUs_Ritika" title="aboutUs_Ritika" class="image">
+                        <div class="member-info">
+                            <p class="name">Ritika Johri</p>
+                            <p class="info-title">MS in Business Analytics at USF</p>
+                            <p class="description">Worked for around 5 years in ICICI Bank, a leading private-sector bank in India, 
+                                as Product Manager and Corporate Relationship Manager.                              
+                            </p>
+                            <p class="contribution">Created "Eye Makeup Products" Page (html+css) & "About Us" Page (html+css).
+                                Created Analytics Page (html+css) by including a donut chart, pie chart and bar graph using Chart.js.
+                            </p>
+                        </div> 
+                    </div>
+                    <div class="member-wrapper">
+                        <img src="{{ url_for('static', filename='images/linkedin/Vaishnavi_LinkedIn.jpg') }}" alt="aboutUs_Vaishnavi" title="aboutUs_Vaishnavi" class="image">
+                        <div class="member-info">
+                            <p class="name">Vaishnavi Gollagadda</p>
+                            <p class="info-title">MS in Business Analytics at USF</p>
+                            <p class="description">Worked in Amazon for 4 years as an Ops tech IT for various teams within 
+                                the organization and designated as  ML data Associate,  Quality Specialist.
+                            </p>
+                            <p class="contribution">Created "Lipstick Collections" Page (html+css) & Products Page (css). 
+                                Designed a contact form in HTML, and then utilized CSS's boot strap in order to insert the code into the style sheet.
+                            </p>
+                        </div> 
+                    </div>
+                </div>
+            </section>
+            <!-- Content Ends Here -->
+            <!-- Footer Starts Here -->
+            <footer>
+                <div class="footer-promo">
+                    <div class="promo-content">
+                        <img src="{{ url_for('static', filename='images/Authenticity.png') }}" alt="Authentic" title="authentic" class="icon">
+                        <span>100% Authentic</span>
+                    </div>
+                    <div class="promo-content">
+                        <img src="{{ url_for('static', filename='images/free_shipping.png') }}" alt="Free Shipping" title="freeshipping" class="icon">
+                        <span>Free Shipping</span>
+                    </div>
+                    <div class="promo-content">
+                        <img src="{{ url_for('static', filename='images/easy_returns.png') }}" alt="Easy Returns" title="easyreturns" class="icon">
+                        <span>Easy Return</span>
+                    </div>
+                    <div class="social-media">
+                        <p>show some love on social media</p>
+                        <div>
+                            <img src="{{ url_for('static', filename='images/insta.png') }}" alt="insta" title="insta" class="social-icon">
+                            <img src="{{ url_for('static', filename='images/facebook.png') }}" alt="facebook" title="facebook" class="social-icon">
+                            <img src="{{ url_for('static', filename='images/pinterest.png') }}" alt="pinterest" title="pinterest" class="social-icon">
+                            <img src="{{ url_for('static', filename='images/twitter.png') }}" alt="twitter" title="twitter" class="social-icon">
+                        </div>
+                    </div>
+                </div>
+                <nav>
+                    <ul class="nav-list">
+                        <li>Terms & conditions</li>
+                        <li>Shipping Policy</li>
+                        <li>Cancelation Policy</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </nav>
+                <div class="copy-right">
+                    <p><span>&copy;</span> 2023 Beauty Spot E-Retail Pvt. Ltd. All Rights Reserved.</p>
+                </div>
+            </footer>
+            <!-- Footer Ends Here -->
+        </div>
+        <!-- MainContainer Ends Here -->
+    </body>
+</html>

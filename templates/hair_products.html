@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Beauty Spot</title> 
+        <link rel="icon" type="image/x-icon" href=".././images/myicon.ico">
+        <meta name="viewport" content="widthdevice-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Sono' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/hair_products.css') }}">
+        <script type="text/javascript" src="{{ url_for('static', filename='scripts/product.js') }}"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"> 
+    </head>
+    <body onload="createProdListHTML('Hair')"> 
+        <!-- MainContainer Starts Here -->
+        <div id="maincontainer">
+            <!-- Header Starts Here-->
+            <header>
+                <a class="logo" href="/">
+                    <img src="{{ url_for('static', filename='images/final-logo.png') }}" alt="logo" title="Logo">
+                </a>
+                <nav>
+                    <ul class="nav-list">
+                        <li><a href="/index">Home</a></li>
+                        <li><a href="/product">Products</a></li>
+                        <li><a href="/about_us">About Us</a></li>
+                        <li><a href="/contact_us">Contact Us</a></li>
+                        <li><a href="/chart">Analytics</a></li>
+                    </ul>
+                </nav>
+                <div class="d-flex w-100 align-items-center justify-content-end">
+                    <div class="mx-2 mx-sm-3 search w-75">
+                        <div class="form-floating my-3">
+                            <input type="text" 
+                                class="form-control" 
+                                id="floatingInput" 
+                                placeholder="name@example.com"
+                                onkeyup="createProdListHTML(null,event.target.value)" 
+                                onkeydown="createProdListHTML(null,event.target.value)">
+                            <label for="floatingInput">Search</label>
+                          </div>
+                    </div>
+                    <div class="d-flex justify-content-end px-sm-3 my-2 w-25">
+                        <button type="button" class="btn btn-primary pink-btn cart-btn" data-bs-toggle="modal" data-bs-target="#cartList" onclick="generateCartList()">
+                            Cart <span class="badge bg-secondary" id="productNumber"></span>
+                        </button>
+                        <div class="modal fade" id="cartList" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body py-0" id="myCartBody">
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="clearCart()">Clear Cart</button>
+                                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Pay & Checkout</button>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- Hearder Ends Here -->
+             <!-- Content Starts Here -->
+             <div id="content">
+                <section class="product-types">
+                    <h2>Hair Care Range</h2>
+                    <div class="types">
+                        <div class="type-wrapper">
+                            <img src="{{ url_for('static', filename='images/hair-color-bubble.png') }}" alt="hair-color" title="hair-color" class="image">
+                            <p>Hair Color</p>
+                        </div>
+                        <div class="type-wrapper">
+                            <img src="{{ url_for('static', filename='images/treatment-bubble.png') }}" alt="treatment" title="treatment" class="image">
+                            <p>Treatment Serums</p>
+                        </div>
+                        <div class="type-wrapper">
+                            <img src="{{ url_for('static', filename='images/styling-products-bubble.png') }}" alt="styling-products" title="styling-products" class="image">
+                            <p>Styling Products</p>
+                        </div>
+                        <div class="type-wrapper">
+                            <img src="{{ url_for('static', filename='images/hair-gifts-bubble.png') }}" alt="hair-gifts" title="hair-gifts" class="image">
+                            <p>Gift &amp; Value Set</p>
+                        </div>
+                        <div class="type-wrapper">
+                            <img src="{{ url_for('static', filename='images/hair-styling-tools-bubble.png') }}" alt="hair-styling-tools" title="hair-styling-tools" class="image">
+                            <p>Hair Styling Tools</p>
+                        </div>
+                        <div class="type-wrapper">
+                            <img src="{{ url_for('static', filename='images/kids-hair-bubble.png') }}" alt="kids-hair" title="kids-hair" class="image">
+                            <p>Kid's Haircare Products</p>
+                        </div>
+                        <div class="type-wrapper">
+                            <img src="{{ url_for('static', filename='images/brushes-combs-bubble.png') }}" alt="brushes-combs" title="brushes-combs" class="image">
+                            <p>Brushes &amp; Combs</p>
+                        </div>
+                        <div class="type-wrapper">
+                            <img src="{{ url_for('static', filename='images/shampoo-conditioner-bubble.png') }}" alt="shampoo-conditioner" title="shampoo-conditioner" class="image">
+                            <p>Shampoo &amp; Conditioner</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="popular-products">
+                    <h2>Hair Products</h2>
+                    <div class="products" id="products"></div>
+                </section>
+             </div>
+             <!-- Content Ends Here -->
+             <!-- Footer Starts Here -->
+             <footer>
+                <div class="footer-promo">
+                    <div class="promo-content">
+                        <img src="{{ url_for('static', filename='images/Authenticity.png') }}" alt="Authentic" title="authentic" class="icon">
+                        <span>100% Authentic</span>
+                    </div>
+                    <div class="promo-content">
+                        <img src="{{ url_for('static', filename='images/free_shipping.png') }}" alt="Free Shipping" title="freeshipping" class="icon">
+                        <span>Free Shipping</span>
+                    </div>
+                    <div class="promo-content">
+                        <img src="{{ url_for('static', filename='images/easy_returns.png') }}" alt="Easy Returns" title="easyreturns" class="icon">
+                        <span>Easy Return</span>
+                    </div>
+                    <div class="social-media">
+                        <p>show some love on social media</p>
+                        <div>
+                            <img src="{{ url_for('static', filename='images/insta.png') }}" alt="insta" title="insta" class="social-icon">
+                            <img src="{{ url_for('static', filename='images/facebook.png') }}" alt="facebook" title="facebook" class="social-icon">
+                            <img src="{{ url_for('static', filename='images/pinterest.png') }}" alt="pinterest" title="pinterest" class="social-icon">
+                            <img src="{{ url_for('static', filename='images/twitter.png') }}" alt="twitter" title="twitter" class="social-icon">
+                        </div>
+                    </div>
+                </div>
+                <nav>
+                    <ul class="nav-list">
+                        <li>Terms & conditions</li>
+                        <li>Shipping Policy</li>
+                        <li>Cancelation Policy</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </nav>
+                <div class="copy-right">
+                    <p><span>&copy;</span> 2023 Beauty Spot E-Retail Pvt. Ltd. All Rights Reserved.</p>
+                </div>
+            </footer>
+            <!-- Footer Ends Here -->
+        </div>
+        <!-- MainContainer Ends Here -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    </body>
+</html>

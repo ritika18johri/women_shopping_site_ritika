@@ -1,0 +1,300 @@
+[
+    {
+        "productId": "1",
+        "productInfo": "Color Last Conditioner",
+        "product": "Biolage",
+        "price": "22.95",
+        "offer": "15.99",
+        "category": "Hair",
+        "imgSrc": "/static/images/conditioner.png"
+    },
+    {
+        "productId": "2",
+        "productInfo": "Permanent Color Kit",
+        "product": "IGK",
+        "price": "28.50",
+        "category": "Hair",
+        "imgSrc": "/static/images/color_kit.png"
+    },
+    {
+        "productId": "3",
+        "productInfo": "Fluffy Glazey Hair Gloss",
+        "product": "Hally",
+        "price": "15.00",
+        "category": "Hair",
+        "imgSrc": "/static/images/hair_gloss.png"
+    },
+    {
+        "productId": "4",
+        "productInfo": "Curly Hair Defining Cream",
+        "product": "Fairy Tales",
+        "price": "30.00",
+        "offer": "20.99",
+        "category": "Hair",
+        "imgSrc": "/static/images/kid_cream.png"
+    },
+    {
+        "productId": "5",
+        "productInfo": "Hydrate Shampoo",
+        "product": "Pureolgy",
+        "price": "36.99",
+        "category": "Hair",
+        "imgSrc": "/static/images/shampoo.png"
+    },
+    {
+        "productId": "6",
+        "productInfo": "Color Last Travel Kit",
+        "product": "Biolage",
+        "price": "29.00",
+        "category": "Hair",
+        "imgSrc": "/static/images/travel_set.png"
+    },
+    {
+        "productId": "7",
+        "productInfo": "Scalp Serum",
+        "product": "Divi",
+        "price": "18.00",
+        "offer": "9.99",
+        "category": "Hair",
+        "imgSrc": "/static/images/treatement_serum.png"
+    },
+    {
+        "productId": "8",
+        "productInfo": "Satin Heatless Curling Set",
+        "product": "Kitsch",
+        "price": "16.00",
+        "category": "Hair",
+        "imgSrc": "/static/images/curl.png"
+    },
+    {
+        "productId": "9",
+        "productInfo": "Fresh. Dreamy. Cozy. And beyond!",
+        "product": "Fresh & Clean",
+        "price": "17.95",
+        "category": "lotion",
+        "imgSrc": "/static/images/body_lotions/lotion1.png"
+    },
+    {
+        "productId": "10",
+        "productInfo": "Nourishing Hand and Body Lotion",
+        "product": "Victoria's Secret",
+        "price": "28.95",
+        "offer": "8.99",
+        "category": "lotion",
+        "imgSrc": "/static/images/body_lotions/lotion2.png"
+    },
+    {
+        "productId": "11",
+        "productInfo": "Orange Meadow Fragrance Lotion",
+        "product": "PINK",
+        "price": "18.95",
+        "category": "lotion",
+        "imgSrc": "/static/images/body_lotions/lotion3.png"
+    },
+    {
+        "productId": "12",
+        "productInfo": "Tropic of PINK Body Lotion",
+        "product": "Bronzed Coconut",
+        "price": "24.95",
+        "category": "lotion",
+        "imgSrc": "/static/images/body_lotions/lotion7.png"
+    },
+    {
+        "productId": "13",
+        "productInfo": "Moodscentz™ Mist",
+        "product": "PINK",
+        "price": "15.99",
+        "category": "lotion",
+        "imgSrc": "/static/images/body_lotions/lotion4.png"
+    },
+    {
+        "productId": "14",
+        "productInfo": "Honey Ginger Lotion",
+        "product": "PINK",
+        "price": "17.95",
+        "offer": "5.99",
+        "category": "lotion",
+        "imgSrc": "/static/images/body_lotions/lotion5.png"
+    },
+    {
+        "productId": "15",
+        "productInfo": "Basic Apple Body Lotion",
+        "product": "PINK",
+        "price": "17.95",
+        "category": "lotion",
+        "imgSrc": "/static/images/body_lotions/lotion6.png"
+    },
+    {
+        "productId": "16",
+        "productInfo": "Cannabis Sativa Seed Oil",
+        "product": "Coco Chill Body Lotion",
+        "price": "15.95",
+        "category": "lotion",
+        "imgSrc": "/static/images/body_lotions/lotion8.png"
+    },
+    {
+        "productId": "17",
+        "productInfo": "5-in-1 Pack",
+        "product": "Macy's",
+        "price": "59.00",
+        "offer": "31.99",
+        "category": "lipcare",
+        "imgSrc": "/static/images/lipcare_images/lip_5in1pack.png"
+    },
+    {
+        "productId": "18",
+        "productInfo": "Lip Balm Pack",
+        "product": "Burt's Bee",
+        "price": "18.50",
+        "category": "lipcare",
+        "imgSrc": "/static/images/lipcare_images/Lip_balmpack.png"
+    },
+    {
+        "productId": "19",
+        "productInfo": "Mini Lipsticks",
+        "product": "MAC",
+        "price": "78.00",
+        "category": "lipcare",
+        "imgSrc": "/static/images/lipcare_images/lip_macmini.png"
+    },
+    {
+        "productId": "20",
+        "productInfo": "Cherry Nights Lip Mask",
+        "product": "Generic",
+        "price": "9.99",
+        "category": "lipcare",
+        "imgSrc": "/static/images/lipcare_images/lip_nightmask.png"
+    },
+    {
+        "productId": "21",
+        "productInfo": "Matte Lipstick",
+        "product": "DNM",
+        "price": "36.99",
+        "category": "lipcare",
+        "imgSrc": "/static/images/lipcare_images/lip_matte.png"
+    },
+    {
+        "productId": "22",
+        "productInfo": "Lip Palette",
+        "product": "Maybelline",
+        "price": "29.00",
+        "category": "lipcare",
+        "imgSrc": "/static/images/lipcare_images/lip_pallet.png"
+    },
+    {
+        "productId": "23",
+        "productInfo": "Kid's Lip Balm",
+        "product": "Smacker",
+        "price": "9.00",
+        "offer": "5.99",
+        "category": "lipcare",
+        "imgSrc": "/static/images/lipcare_images/lip_kidsbalm.png"
+    },
+    {
+        "productId": "24",
+        "productInfo": "Lipstick",
+        "product": "Rare Beauty",
+        "price": "16.00",
+        "category": "lipcare",
+        "imgSrc": "/static/images/lipcare_images/Lip_valuepack.png"
+    },
+    {
+        "productId": "25",
+        "productInfo": "Maybelline Colossal Bold Eyeliner - Black",
+        "product": "Maybelline",
+        "price": "15.00",
+        "category": "eyecare",
+        "imgSrc": "/static/images/eye_products/eyeliner_Maybelline.png"
+    },
+    {
+        "productId": "26",
+        "productInfo": "Transcendence Palette - Eye & Face Pigments",
+        "product": "Danessa Myricks Beauty",
+        "price": "125.00",
+        "category": "eyecare",
+        "imgSrc": "/static/images/eye_products/eyePalette_Danessa.png"
+    },
+    {
+        "productId": "27",
+        "productInfo": "Creamy Kohl Longwear Eye Pencil",
+        "product": "Huda Beauty",
+        "price": "22.95",
+        "offer": "15.99",
+        "category": "eyecare",
+        "imgSrc": "/static/images/kohl_HudaBeauty.png"
+    },
+    {
+        "productId": "28",
+        "productInfo": "Huda Beauty Lashes Double-Ended Mascara",
+        "product": "Huda Beauty",
+        "price": "32.00",
+        "category": "eyecare",
+        "imgSrc": "/static/images/mascara_HudaBeauty.png"
+    },
+    {
+        "productId": "29",
+        "productInfo": "Killawatt Freestyle Highlighter",
+        "product": "Fenty Beauty",
+        "price": "40.00",
+        "offer": "31.99",
+        "category": "eyecare",
+        "imgSrc": "/static/images/eye_products/eyeshadow_Fenty_Beauty.png"
+    },
+    {
+        "productId": "30",
+        "productInfo": "Brow Wiz® Ultra-Slim Precision Brow Pencil",
+        "product": "Anastasia Beverly Hills",
+        "price": "25.00",
+        "category": "eyecare",
+        "imgSrc": "/static/images/eye_products/eyebrow_Anastasia.png"
+    },
+    {
+        "productId": "31",
+        "productInfo": "Brow Setter Clear Brow Gel with Glow Effect",
+        "product": "Benfit Cosmetics",
+        "price": "15.00",
+        "category": "eyecare",
+        "imgSrc": "/static/images/eye_products/eyebrow_Benefit.png"
+    },
+    {
+        "productId": "32",
+        "productInfo": "Garnier Micellar Oil-Infused Cleansing Water",
+        "product": "Garnier",
+        "price": "10.00",
+        "category": "eyecare",
+        "imgSrc": "/static/images/eye_products/eyeMakeupRemover_Garnier.png"
+    },
+    {
+        "productId": "33",
+        "productInfo": "Bella Cotton Pad With Alovera Extract - 100Pcs",
+        "product": "Bella",
+        "price": "5.00",
+        "category": "eyecare",
+        "imgSrc": "/static/images/eye_products/eyeMakeupRemover_Bella.png"
+    },
+    {
+        "productId": "34",
+        "productInfo": "The Glamoureyes Kit",
+        "product": "Velour Lashes",
+        "price": "29.00",
+        "category": "eyecare",
+        "imgSrc": "/static/images/falseEyelashes_Velour.png"
+    },
+    {
+        "productId": "35",
+        "productInfo": "Empowered Eyeshadow Palette",
+        "product": "Huda Beauty",
+        "price": "69.00",
+        "category": "eyecare",
+        "imgSrc": "/static/images/eye_products/eyePalette_Huda.png"
+    },
+    {
+        "productId": "36",
+        "productInfo": "BACKSTAGE Eyeshadow Palette",
+        "product": "Dior",
+        "price": "49.95",
+        "offer": "32.99",
+        "category": "eyecare",
+        "imgSrc": "/static/images/eye_products/eyePalette_Dior.png"
+    }
+]

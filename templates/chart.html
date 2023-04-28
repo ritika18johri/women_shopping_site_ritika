@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chart Page</title>
+    <link rel="icon" type="image/x-icon" href="../images/myicon.ico" />
+    <meta name="viewport" content="widthdevice-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Sono"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="{{ url_for('static', filename='css/chart.css') }}" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"> 
+  </head>
+  <body>
+    <div id="maincontainer">
+      <!-- Header Starts Here-->
+      <header>
+        <a class="logo" href="/">
+          <img src="{{ url_for('static', filename='images/final-logo.png') }}" alt="logo" title="Logo" />
+        </a>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="/index">Home</a></li>
+            <li><a href="/product">Products</a></li>
+            <li><a href="/about_us">About Us</a></li>
+            <li><a href="/contact_us">Contact Us</a></li>
+            <li class="selected">Analytics</li>
+            
+          </ul>
+          <div class="topnav-right">
+            <a href="/logout">Logout</a>
+        </div>
+        </nav>
+      </header>
+      <!-- Hearder Ends Here -->
+      <!-- Content Starts Here -->
+      <section class="popular-products row m-0 p-3">
+        <h2 class="col-12 col-md-5">1.Product Categories break-up</h2>
+        <div class="chartBox col-12 col-md-5 m-md-3">
+          <canvas id="myChart" class="w-100"></canvas>
+        </div>
+      </section>
+
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+      <script>
+        const ctx = document.getElementById("myChart");
+
+        new Chart(ctx, {
+          type: "doughnut",
+          data: {
+            labels: [
+              "Lipstick Collections",
+              "Eye Makeup Products",
+              "Body Lotions & Moisturizing Creams",
+              "Hair Care Products",
+            ],
+            datasets: [
+              {
+                label: "# of Products",
+                data: [8, 12, 8, 8],
+                backgroundColor: [
+                                            'rgba(255, 99, 132)',
+                                            'rgba(255, 159, 64)',
+                                            'rgba(54, 162, 235)',
+                                            'rgba(75, 192, 192)'],
+                borderWidth: 1,
+              },
+            ],
+          },
+          options: {},
+        });
+      </script>
+
+      <section class="popular-products row m-0 p-3">
+        <h2 class= "col-12 col-md-5">2.Discounted Products break-up</h2>
+        <div class="chartBox col-12 col-md-5 m-md-3">
+          <canvas id="myChart1" class="w-100"></canvas>
+        </div>
+      </section>
+
+      <script>
+        const ctx1 = document.getElementById("myChart1");
+
+        new Chart(ctx1, {
+          type: "pie",
+          data: {
+            labels: ["Discounted Products", "Regular-Priced Products"],
+            datasets: [
+              {
+                label: "# of Products",
+                data: [10, 26],
+                borderWidth: 1,
+              },
+            ],
+          },
+          options: {},
+        });
+      </script>
+
+      <section class="popular-products row m-0 p-3">
+        <h2 class= "col-12 col-md-5">3.Product Pricing</h2>
+        <div class="chartBoxBar col-12 col-md-5 m-md-3">
+          <canvas id="myChart2" class="w-100"></canvas>
+        </div>
+      </section>
+
+      <script>
+        const ctx2 = document.getElementById("myChart2");
+
+        new Chart(ctx2, {
+          type: "bar",
+          data: {
+            labels: [
+              "Upto $9.99",
+              "$10-$19.99",
+              "$20-$29.99",
+              "$30-$39.99",
+              "$40 & above",
+            ],
+            datasets: [
+              {
+                label: "# of Products",
+                data: [6, 14, 7, 6, 3],
+			backgroundColor: [
+                                       /*     'rgba(255, 99, 132)',
+                                            'rgba(255, 159, 64)',
+                                            'rgba(255, 205, 86)',
+                                            'rgba(54, 162, 235)',*/
+                                            'rgba(75, 192, 192)',
+                                            
+                       ],
+                       borderColor: [
+                                       /*     'rgb(255, 99, 132)',
+                                            'rgb(255, 159, 64)',
+                                            'rgb(255, 205, 86)',
+                                            'rgb(54, 162, 235)',*/
+                                            'rgb(75, 192, 192)',
+                                            
+                       ],
+                borderWidth: 1,
+              },
+            ],
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true,
+              },
+            },
+          },
+        });
+      </script>
+    </div>
+    <footer>
+      <div class="footer-promo">
+        <div class="promo-content">
+            <img src="{{ url_for('static', filename='images/Authenticity.png') }}" alt="Authentic" title="authentic" class="icon">
+            <span>100% Authentic</span>
+        </div>
+        <div class="promo-content">
+            <img src="{{ url_for('static', filename='images/free_shipping.png') }}" alt="Free Shipping" title="freeshipping" class="icon">
+            <span>Free Shipping</span>
+        </div>
+        <div class="promo-content">
+            <img src="{{ url_for('static', filename='images/easy_returns.png') }}" alt="Easy Returns" title="easyreturns" class="icon">
+            <span>Easy Return</span>
+        </div>
+        <div class="social-media">
+            <p>show some love on social media</p>
+            <div>
+                <img src="{{ url_for('static', filename='images/insta.png') }}" alt="insta" title="insta" class="social-icon">
+                <img src="{{ url_for('static', filename='images/facebook.png') }}" alt="facebook" title="facebook" class="social-icon">
+                <img src="{{ url_for('static', filename='images/pinterest.png') }}" alt="pinterest" title="pinterest" class="social-icon">
+                <img src="{{ url_for('static', filename='images/twitter.png') }}" alt="twitter" title="twitter" class="social-icon">
+            </div>
+        </div>
+    </div>
+    <nav>
+        <ul class="nav-list">
+            <li>Terms & conditions</li>
+            <li>Shipping Policy</li>
+            <li>Cancelation Policy</li>
+            <li>Privacy Policy</li>
+        </ul>
+    </nav>
+    <div class="copy-right">
+        <p><span>&copy;</span> 2023 Beauty Spot E-Retail Pvt. Ltd. All Rights Reserved.</p>
+    </div>
+    </footer>
+    <!-- Footer Ends Here -->
+    <!-- MainContainer Ends Here -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>
